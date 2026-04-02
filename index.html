@@ -290,7 +290,7 @@ footer {
   position: fixed;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.13;
+  opacity: 0.22;
 }
 
 .deco:nth-child(1) { animation: bobDrift 7s ease-in-out infinite; }
@@ -299,6 +299,15 @@ footer {
 .deco:nth-child(4) { animation: bobTilt 8s ease-in-out infinite -0.8s; }
 .deco:nth-child(5) { animation: bobPulse 6.5s ease-in-out infinite -3s; }
 .deco:nth-child(6) { animation: bobZigzag 7.5s ease-in-out infinite -4s; }
+.deco:nth-child(7) { animation: bobDrift 6s ease-in-out infinite -1.5s; }
+.deco:nth-child(8) { animation: bobSpin 8s ease-in-out infinite -3.5s; }
+.deco:nth-child(9) { animation: bobWave 7s ease-in-out infinite -2s; }
+.deco:nth-child(10) { animation: bobTilt 5.5s ease-in-out infinite -0.5s; }
+.deco:nth-child(11) { animation: bobPulse 7s ease-in-out infinite -4.5s; }
+.deco:nth-child(12) { animation: bobZigzag 6s ease-in-out infinite -1s; }
+.deco:nth-child(13) { animation: bobDrift 8.5s ease-in-out infinite -2.5s; }
+.deco:nth-child(14) { animation: bobSpin 5s ease-in-out infinite -3s; }
+.deco:nth-child(15) { animation: bobWave 7.5s ease-in-out infinite -0.8s; }
 
 @keyframes bobDrift {
   0%, 100% { transform: translate(0, 0) rotate(0deg); }
@@ -355,6 +364,14 @@ footer {
 <svg class="deco" style="top:68%;left:4%;width:60px" viewBox="0 0 60 60"><rect x="10" y="10" width="40" height="40" stroke="#e85d3a" stroke-width="1.5" fill="none" transform="rotate(12 30 30)"/></svg>
 <svg class="deco" style="bottom:12%;right:8%;width:50px" viewBox="0 0 50 50"><path d="M25 5L30 20L45 20L33 28L38 43L25 33L12 43L17 28L5 20L20 20Z" stroke="#3a8ee8" stroke-width="1.2" fill="none"/></svg>
 <svg class="deco" style="top:30%;left:7%;width:50px" viewBox="0 0 50 50"><path d="M25 5L30 20L45 20L33 28L38 43L25 33L12 43L17 28L5 20L20 20Z" stroke="#e85d3a" stroke-width="1.2" fill="none"/></svg>
+<svg class="deco" style="top:18%;right:15%;width:70px" viewBox="0 0 70 70"><path d="M35 5Q55 20 50 40Q45 60 25 55Q5 50 10 30Q15 10 35 5Z" stroke="#e85d3a" stroke-width="1.3" fill="none"/></svg>
+<svg class="deco" style="top:55%;left:12%;width:65px" viewBox="0 0 65 65"><circle cx="32" cy="32" r="25" stroke="#3a8ee8" stroke-width="1.3" fill="none"/><circle cx="32" cy="32" r="12" stroke="#3a8ee8" stroke-width="1" fill="none" stroke-dasharray="4 3"/></svg>
+<svg class="deco" style="bottom:25%;left:3%;width:90px" viewBox="0 0 90 50"><path d="M5 25Q20 5 45 25Q70 45 85 25" stroke="#44b86c" stroke-width="1.5" fill="none"/><path d="M5 30Q20 10 45 30Q70 50 85 30" stroke="#44b86c" stroke-width="1" fill="none" opacity="0.5"/></svg>
+<svg class="deco" style="top:75%;right:12%;width:55px" viewBox="0 0 55 55"><path d="M10 10L45 10L45 45L10 45Z" stroke="#e85d3a" stroke-width="1.3" fill="none" transform="rotate(-8 27 27)"/><path d="M15 15L40 15L40 40L15 40Z" stroke="#e85d3a" stroke-width="1" fill="none" transform="rotate(5 27 27)"/></svg>
+<svg class="deco" style="top:40%;left:2%;width:45px" viewBox="0 0 45 45"><path d="M22 5L27 18L40 18L29 26L34 40L22 31L10 40L15 26L4 18L17 18Z" stroke="#44b86c" stroke-width="1.2" fill="none"/></svg>
+<svg class="deco" style="bottom:8%;left:18%;width:80px" viewBox="0 0 80 40"><path d="M5 20C15 5 30 5 40 20C50 35 65 35 75 20" stroke="#3a8ee8" stroke-width="1.5" fill="none"/></svg>
+<svg class="deco" style="top:15%;left:20%;width:40px" viewBox="0 0 40 40"><circle cx="20" cy="20" r="3" fill="#e85d3a"/><circle cx="20" cy="20" r="14" stroke="#e85d3a" stroke-width="1.2" fill="none" stroke-dasharray="3 5"/></svg>
+<svg class="deco" style="top:85%;right:5%;width:60px" viewBox="0 0 60 60"><path d="M10 50Q10 10 50 10" stroke="#44b86c" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M20 50Q20 20 50 20" stroke="#44b86c" stroke-width="1" fill="none" opacity="0.5"/></svg>
 
 <nav>
   <a class="logo" style="cursor:pointer" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=home]').classList.add('active');document.getElementById('page-home').classList.add('active')">Natto</a>
@@ -363,6 +380,7 @@ footer {
     <button class="nav-tab" data-page="optimization"><img src="https://cdn-icons-png.flaticon.com/32/16/16983.png" style="width:18px;height:18px;vertical-align:middle;margin-right:4px;filter:grayscale(1) brightness(0.2)"> Optimization</button>
     <button class="nav-tab" data-page="math"><img src="https://cdn-icons-png.flaticon.com/32/16/16519.png" style="width:18px;height:18px;vertical-align:middle;margin-right:4px;filter:grayscale(1) brightness(0.2)"> Math / Physics</button>
     <button class="nav-tab" data-page="backend"><img src="https://cdn-icons-png.flaticon.com/32/4960/4960921.png" style="width:18px;height:18px;vertical-align:middle;margin-right:4px;filter:grayscale(1) brightness(0.2)"> Backend</button>
+    <button class="nav-tab" data-page="info"><svg width="18" height="18" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" style="stroke-dasharray:66;stroke-dashoffset:2"/><circle cx="12" cy="7.5" r="1.2" fill="var(--ink)"/><path d="M12 11v6" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/></svg> Info</button>
   </div>
 </nav>
 
@@ -374,10 +392,10 @@ footer {
       </svg>
     </span>
   </h1>
-  <p class="hero-sub">Reliable Roblox Scripter of <b style="position:relative;display:inline-block">6 years<svg style="position:absolute;bottom:-6px;left:-4px;right:-4px;width:calc(100% + 8px);height:10px" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5Q12 0 25 5Q38 10 50 5Q62 0 75 5Q88 10 100 5" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round"/></svg></b></p>
+  <p class="hero-sub">Reliable Roblox Scripter for <b style="position:relative;display:inline-block">6 years<svg style="position:absolute;bottom:-6px;left:-4px;right:-4px;width:calc(100% + 8px);height:10px" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5Q12 0 25 5Q38 10 50 5Q62 0 75 5Q88 10 100 5" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round"/></svg></b></p>
   <div class="hero-badges">
     <div class="badge sketchy-sm"><span class="dot" style="background:var(--accent)"></span> Experienced</div>
-    <div class="badge sketchy-sm"><span class="dot" style="background:var(--accent2)"></span> Methodical</div>
+    <div class="badge sketchy-sm"><span class="dot" style="background:var(--accent2)"></span> Efficient</div>
     <div class="badge sketchy-sm"><span class="dot" style="background:var(--accent3)"></span> Reliable</div>
     <div class="badge sketchy-sm"><span class="dot" style="background:#e8598a"></span> Active</div>
   </div>
@@ -385,18 +403,23 @@ footer {
 
 <div class="page-section active" id="page-home">
   <div style="max-width:600px;margin:0 auto;text-align:center">
-    <div style="display:flex;flex-direction:column;gap:20px">
-      <button class="home-btn sketchy" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=optimization]').classList.add('active');document.getElementById('page-optimization').classList.add('active')">
+    <h2 style="font-family:'Caveat',cursive;font-size:2rem;font-weight:700;margin-bottom:24px">Check out my work!</h2>
+    <div style="display:flex;flex-direction:column;gap:20px;align-items:center">
+      <button class="home-btn sketchy" style="width:100%" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=optimization]').classList.add('active');document.getElementById('page-optimization').classList.add('active')">
         <img src="https://cdn-icons-png.flaticon.com/128/16/16983.png" style="width:36px;height:36px;filter:grayscale(1) brightness(0.2)">
         <span>Optimization / Debugging</span>
       </button>
-      <button class="home-btn sketchy" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=math]').classList.add('active');document.getElementById('page-math').classList.add('active')">
+      <button class="home-btn sketchy" style="width:100%" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=math]').classList.add('active');document.getElementById('page-math').classList.add('active')">
         <img src="https://cdn-icons-png.flaticon.com/128/16/16519.png" style="width:36px;height:36px;filter:grayscale(1) brightness(0.2)">
         <span>Math / Physics</span>
       </button>
-      <button class="home-btn sketchy" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=backend]').classList.add('active');document.getElementById('page-backend').classList.add('active')">
+      <button class="home-btn sketchy" style="width:100%" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=backend]').classList.add('active');document.getElementById('page-backend').classList.add('active')">
         <img src="https://cdn-icons-png.flaticon.com/128/4960/4960921.png" style="width:36px;height:36px;filter:grayscale(1) brightness(0.2)">
         <span>Backend / Data Control</span>
+      </button>
+      <button class="home-btn sketchy" style="padding:12px 24px;font-size:1.05rem;width:auto" onclick="document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.page-section').forEach(p=>p.classList.remove('active'));document.querySelector('[data-page=info]').classList.add('active');document.getElementById('page-info').classList.add('active')">
+        <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="var(--ink)" stroke-width="2" style="stroke-dasharray:66;stroke-dashoffset:2"/><circle cx="12" cy="7.5" r="1.2" fill="var(--ink)"/><path d="M12 11v6" stroke="var(--ink)" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span>More Info About Me</span>
       </button>
     </div>
   </div>
@@ -413,25 +436,20 @@ footer {
       </div>
       <h3>5000-Part Model Assembly</h3>
       <p>Client-side animated assembly running at 60fps</p>
-      <span class="video-tag tag-orange">Performance</span>
     </div>
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/Me2j3EIqoofgxY3p0V2h" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Replication Culling System</h3>
-      <p>Custom streaming to cut network traffic by 60%</p>
-      <span class="video-tag tag-orange">Networking</span>
+      <h3>Low Detail Setting</h3>
+      <p>Disables high-performance elements such as materials for a smooth experience</p>
     </div>
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/5mqoyQ7t1ERolVfZoQWw" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Memory Leak Hunting</h3>
-      <p>Finding & fixing connection leaks in a live game</p>
-      <span class="video-tag tag-orange">Debugging</span>
+      <h3>Compression Algorithm</h3>
+      <p>Reduces data size by 60%+ for efficient and fast data storing</p>
     </div>
   </div>
 </div>
@@ -442,31 +460,25 @@ footer {
   </div>
   <div class="video-grid">
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/qtQqE2yHtzFl4Bq4ZHYA" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Custom Ballistics Engine</h3>
-      <p>Projectile prediction with wind & gravity</p>
-      <span class="video-tag tag-blue">Physics</span>
+      <h3>Procedural Dungeon Generator</h3>
+      <p>Clean, unique, fast, and natural dungeon generation.</p>
     </div>
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/zIGcvTtzfTFdIZJUb3J1" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Inverse Kinematics Rig</h3>
-      <p>Procedural foot placement on uneven terrain</p>
-      <span class="video-tag tag-blue">Math</span>
+      <h3>Lightning Module</h3>
+      <p>Realistic and smooth lightning bolt generation</p>
     </div>
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/2cRmomCv1OrlIxqxrBEY" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Bezier Path Tool</h3>
-      <p>Smooth NPC patrol routes with cubic interpolation</p>
-      <span class="video-tag tag-blue">Tooling</span>
+      <h3>Footplanting System</h3>
+      <p>Dynamically adjusts step direction based on movement</p>
     </div>
   </div>
 </div>
@@ -477,31 +489,43 @@ footer {
   </div>
   <div class="video-grid">
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/0WN1Jd6Jd48aiRHW67pM" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Session-Locked DataStore</h3>
-      <p>Preventing data loss & duplication exploits</p>
-      <span class="video-tag tag-green">Data</span>
+      <h3>Image Uploader</h3>
+      <p>Enables cross-platform image transfers using HTTPService</p>
     </div>
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/Scu2jB71cq2AcEWvcTiA" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Remote Validation Layer</h3>
-      <p>Server-side sanity checks that stop exploiters cold</p>
-      <span class="video-tag tag-green">Security</span>
+      <h3>Modular Datastore System</h3>
+      <p>Streamlines and visualizes data handling</p>
     </div>
     <div class="video-card sketchy">
-      <div class="video-placeholder">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21"/></svg>
-        <span>video placeholder</span>
+      <div style="position:relative;padding-bottom:56.25%;height:0;border-radius:8px;overflow:hidden">
+        <iframe src="https://jumpshare.com/embed/CTRtpb6zX6TGKaY6ujIy" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
       </div>
-      <h3>Analytics Pipeline</h3>
-      <p>Tracking player behavior with batched HTTP calls</p>
-      <span class="video-tag tag-green">Backend</span>
+      <h3>Dictionary Word Search</h3>
+      <p>Loads a dictionary and autocompletes what the user is typing</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-section" id="page-info">
+  <div style="max-width:650px;margin:0 auto">
+    <div class="section-header">
+      <h2>Info</h2>
+    </div>
+    <div class="sketchy" style="background:var(--card-bg);padding:32px">
+      <h3 style="font-family:'Caveat',cursive;font-size:1.6rem;margin-bottom:12px">About Me</h3>
+      <p style="font-family:'Patrick Hand',cursive;font-size:1.1rem;color:var(--muted);line-height:1.6">
+        Hey, I'm Natto! I've been scripting on Roblox for 6 years. I specialize in optimization, technical systems, and backend architecture. If you're looking for a reliable scripter for your project, feel free to reach out!
+      </p>
+      <h3 style="font-family:'Caveat',cursive;font-size:1.6rem;margin-top:28px;margin-bottom:12px">Contact</h3>
+      <p style="font-family:'Patrick Hand',cursive;font-size:1.1rem;color:var(--muted);line-height:1.6">
+        Discord / Roblox: <span style="color:var(--ink)">@NattoDev</span>
+      </p>
     </div>
   </div>
 </div>
